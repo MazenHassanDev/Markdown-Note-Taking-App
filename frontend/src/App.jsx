@@ -12,7 +12,7 @@ function App() {
         <Route path='/' element={<Navigate to={token ? '/notes': '/login'} />} />
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
-        <Route path='/notes' element={<NoteList />} />
+        <Route path='/notes' element={token ? <NoteList /> : <Navigate to='/login' />} />
       </Routes>
     </BrowserRouter>
   )
