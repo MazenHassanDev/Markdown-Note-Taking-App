@@ -17,7 +17,7 @@ function Login() {
             const response = await api.post('/auth/login/', { username, password })
             localStorage.setItem('token', response.data.access)
             localStorage.setItem('refresh', response.data.refresh)
-            navigate('/notes')
+            window.location.href = '/notes'
         } catch (err) {
             setError('Invalid username or password.')
         } finally {
