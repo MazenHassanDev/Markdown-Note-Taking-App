@@ -160,7 +160,7 @@ This starts three containers: Django backend, React frontend, and MySQL. Migrati
 **1. Clone the repository**
 
 ```bash
-git clone https://github.com/your-username/markdown-note-taking-app.git
+git clone https://github.com/MazenHassanDev/Markdown-Note-Taking-App.git
 cd markdown-note-taking-app
 ```
 
